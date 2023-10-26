@@ -1,0 +1,99 @@
+body{
+    background-image: url('https://wallpapers.com/images/hd/aesthetic-laptop-drawing-kzs2xmyje63oewbt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url('bird-svrepo-com.svg') 0 0, auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.personal{
+    border: dashed #FFFF 3px;
+    font-size: 4rem;
+    font-style: italic;
+    
+}
+.project{
+    border: solid rgb(95, 143, 143) 1px;
+    background-color: rgb(120, 186, 189);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.4em;
+    display: inline-block;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+.contact{
+    border: solid rgb(95, 143, 143) 1px;
+    background-color: rgb(120, 186, 189);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+.about{
+    background-color: rgb(120, 186, 189);
+    padding-bottom: 1em;
+    border-radius: 25px;
+    padding-right: 10vh;
+    padding-left: 10vh;
+}
+.name{
+    font-size: 2em;
+}
+p{
+    font-weight: 500;
+    text-align:start;
+}
+.about:hover{
+    background-color: rgb(95, 143, 143);
+}
+.learning{
+    background-color: rgb(120, 186, 189);
+    margin-top: 1em;
+    margin-bottom: 0;
+    border-radius: 25px;
+}
+.learning:hover{
+    background-color: rgb(95, 143, 143);
+}
+.primary{
+    background-color: aliceblue;
+    margin-top: 1em;
+    margin-bottom: 0;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.skills{
+    background-color: rgb(120, 186, 189);
+    margin-top: 1em;
+    margin-bottom: 0;
+    border-radius: 25px;
+}
+.skills:hover{
+    background-color: rgb(95, 143, 143);
+}
+.projects{
+    background-color: rgb(120, 186, 189);
+    margin-top: 1em;
+    margin-bottom: 0;
+    border-radius: 25px;
+}
+.projects:hover{
+    background-color: rgb(95, 143, 143);
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
