@@ -1,0 +1,4 @@
+margin auto to center the table
+get rid of the "hr"
+u can do the dashed line instead of the blue square
+Make sure for not all the "li" to have everything

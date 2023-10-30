@@ -26,7 +26,7 @@ body{
     font-size: 1.4em;
     display: inline-block;
 }
-li{
+.navigation{
     list-style-type: none;
     display: inline-block;
 }
@@ -63,6 +63,9 @@ p{
     margin-bottom: 0;
     border-radius: 25px;
 }
+table{
+    margin: auto;
+}
 .learning:hover{
     background-color: rgb(95, 143, 143);
 }
@@ -95,5 +98,4 @@ p{
 hr{
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
