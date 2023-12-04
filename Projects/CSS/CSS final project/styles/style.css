@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    height: 100vh;
+    font-family: 'roboto';
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+aside{
+    background-image: url(../assets/images/sidebar-1.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    padding: 5px 15px;
+    color: white;
+    font-size: 1rem;
+}
+.listItems{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 7px 0;
+}
+.avatar{
+    width: 45px;
+    border-radius: 50%;
+    height: 45px;
+}
+.active{
+    background-color: red;
+}
+.listItems:hover:not(.active, .profile, .logo){
+    background-color: gray;
+    cursor: pointer;
+}

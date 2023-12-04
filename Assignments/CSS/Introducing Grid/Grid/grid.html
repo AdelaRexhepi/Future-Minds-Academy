@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            height: 100vh;
+        }
+        aside{
+            background-color: grey;
+            padding: 1rem;
+            width: min-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+        main{
+            background-color: bisque;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h1>A sample Blog</h1>
+        <p>lorem ipsum dolor</p>
+        <button>Log in</button>
+    </aside>
+    <main>
+
+    </main>
+</body>
+</html>

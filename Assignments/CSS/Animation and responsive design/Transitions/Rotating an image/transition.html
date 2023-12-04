@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            cursor: pointer;
+            filter: blur(5px);
+            transition: filter .3s, transform .6s .3s;
+        }
+        img:hover{
+            filter: blur(0);
+            transform: rotate(720deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="icon.png" alt="Icon">
+</body>
+</html>

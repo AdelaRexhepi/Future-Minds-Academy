@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-bar{
+            width: 15em;
+            padding: 0.5rem;
+            margin: 1rem;
+            border-radius: 7rem;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            box-shadow: inset 0px 0px 20px lightgrey;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(144, 144, 144);
+        }
+        .search-bar-input{
+            flex-grow: 1;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 1.2rem;
+            color: inherit;
+        }
+        .search-icon{
+            width: 1.5rem;
+        }
+        .search-bar-input::placeholder{
+            color: #b6b6b6;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" class="search-bar-input" placeholder="Search">
+        <img class="search-icon" src="search.svg">
+    </div>
+</body>
+</html>

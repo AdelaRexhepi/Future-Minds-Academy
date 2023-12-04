@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes show {
+            from{
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        *{
+            opacity: 0;
+            animation-name: show;
+            animation-duration: 0.8s;
+            animation-timing-function: cubic-bezier(0.785, 0.135);
+            animation-fill-mode: forwards;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>I'm the title</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Beatae, laboriosam voluptatum harum iusto ratione repudiandae excepturi enim cupiditate quos nemo, quae sit saepe eius corrupti? Impedit optio a eveniet quaerat?
+    </p>
+    <img src="icon.png" alt="">
+</body>
+</html>

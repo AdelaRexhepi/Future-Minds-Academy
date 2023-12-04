@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes open-curtain {
+            0%{
+                width: 50vw;
+            }
+            100%{
+                width: 0;
+            }
+        }
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .curtain{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 50vw;
+            background-color: steelblue;
+            animation-name: open-curtain;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        #left-curtain{
+            left: 0;
+        }
+        #right-curtain{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="left-curtain" class="curtain"></div>
+    <div id="right-curtain" class="curtain"></div>
+    <h1>I'm the title</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Beatae, laboriosam voluptatum harum iusto ratione repudiandae excepturi enim cupiditate quos nemo, quae sit saepe eius corrupti? Impedit optio a eveniet quaerat?
+    </p>
+    <img src="icon.png" alt="">
+</body>
+</html>
