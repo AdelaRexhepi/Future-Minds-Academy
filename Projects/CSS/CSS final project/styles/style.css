@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 300px 6fr;
     height: 100vh;
     font-family: 'roboto';
 }
@@ -39,4 +39,80 @@ aside{
 .listItems:hover:not(.active, .profile, .logo){
     background-color: gray;
     cursor: pointer;
+}
+.content{
+    background-color: #f1f1f1;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.dashboard, .other{
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid gray;
+}
+input:focus{
+    border-bottom: 2px solid purple;
+}
+.notifications{
+    position: relative;
+    width: 30px;
+    margin: 20px 0;
+}
+.five{
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 5px;
+    top: 25px;
+    left: auto;
+    right: 100px;
+    z-index: 1;
+}
+.notification-box{
+    display: none;
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+.notifis:hover .notification-box{
+    display: block;
+}
+.notification-box p:hover{
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.notification-box p{
+    padding: 10px 20px;
+}
+.other{
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
 }
