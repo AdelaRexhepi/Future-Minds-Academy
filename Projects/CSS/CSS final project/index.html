@@ -76,21 +76,24 @@
         <header>
             <div class="dashboard">
                 <div class="more">
-                    <img src="./assets/icons/header/more.svg" alt="" data-tooltip="More">
+                    <img src="./assets/icons/header/more.svg" alt="" title="See More" cursorPointer>
                 </div>
                 <p>Dashboard</p>
             </div>
             <div class="other">
                 <div class="search-bar">
-                    <input type="text" placeholder="Search" />
-                    <div class="more">
-                        <img src="./assets/icons/header/search.svg" alt="">
-                    </div>
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search" id="search" />
+                        <label class="more" for="search">
+                            <img src="./assets/icons/header/search.svg" alt="" title="Search">
+                        </label>
+                    </form>
                 </div>
-                <img src="./assets/icons/header/headerDashboard.svg" alt="">
+                <img src="./assets/icons/header/headerDashboard.svg" alt="" title="Dashboard">
                 <div class="notifis">
                     <span class="five">5</span>
-                    <img src="./assets/icons/header/notifications.svg" alt="" class="notifications">
+                    <img src="./assets/icons/header/notifications.svg" alt="" class="notifications"
+                        title="Notifications">
                     <div class="notification-box">
                         <p>John Doe sent a message</p>
                         <p>Someone viewed your profile</p>
@@ -100,10 +103,168 @@
                     </div>
                 </div>
 
-                <img src="./assets/icons/header/headerAvatar.svg" alt="">
+                <img src="./assets/icons/header/headerAvatar.svg" alt="" title="Profile">
             </div>
         </header>
-        <main></main>
+        <main class="marginY50">
+            <div class="states">
+                <div class="global-title">
+                    <div class="world">
+                        <img src="./assets/icons/cards/language.svg" alt="World" class="">
+                    </div>
+                    <h1>Global Sales by Top Locations</h1>
+                </div>
+                <div class="status-tables">
+                    <table>
+                        <tr class="usa">
+                            <td><img src="../CSS final project/assets/flags/us.svg" alt=""></td>
+                            <td>USA</p>
+                            <td>2 920</p>
+                            <td>53.23%</p>
+                        </tr>
+                        <tr class="germany">
+                            <td><img src="../CSS final project/assets/flags/germany.svg" alt="">
+                            <td>Germany</td>
+                            <td>1 300</td>
+                            <td>4.34%</td>
+                        </tr>
+                        <tr class="albania">
+                            <td><img src="../CSS final project/assets/flags/albania.svg" alt=""></td>
+                            <td>Albania</td>
+                            <td>760</td>
+                            <td>20.43%</td>
+                        </tr>
+                        <tr class="italy">
+                            <td><img src="../CSS final project/assets/flags/italy.svg" alt=""></td>
+                            <td>Italy</td>
+                            <td>690</td>
+                            <td>10.35%</td>
+                        <tr>
+                        <tr class="kosovo">
+                            <td><img src="../CSS final project/assets/flags/kosovo.svg" alt=""></td>
+                            <td>Kosovo</td>
+                            <td>550</td>
+                            <td>5.94%</td>
+                        </tr>
+                    </table>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210881.07348197658!2d-74.14791997329468!3d40.69653910405629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1702306068591!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="boxes marginY50">
+                <div class="box booking">
+                    <div class="info">
+                        <div class="icon chair">
+                            <img src="../CSS final project/assets/icons/cards/chair.svg" alt="">
+                        </div>
+                        <div class="how-much">
+                            <p>Bookings</p>
+                            <h2>184</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <img src="../CSS final project/assets/icons/cards/warning.svg" alt="">
+                        <p>Get more space</p>
+                    </div>
+                </div>
+                <div class="box visits">
+                    <div class="info">
+                        <div class="icon equalizer">
+                            <img src="../CSS final project/assets/icons/cards/equalizer.svg" alt="">
+                        </div>
+                        <div class="how-much">
+                            <p>Website Visits</p>
+                            <h2>75.521</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <img src="../CSS final project/assets/icons/cards/tracked.svg" alt="">
+                        <p>Tracked from Google Analytics</p>
+                    </div>
+                </div>
+                <div class="box revenue">
+                    <div class="info">
+                        <div class="icon revenuing">
+                            <img src="../CSS final project/assets/icons/cards/store.svg" alt="">
+                        </div>
+                        <div class="how-much">
+                            <p>Revenue</p>
+                            <h2>$34,245</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <img src="../CSS final project/assets/icons/cards/calendar.svg" alt="">
+                        <p>Last 24 hours</p>
+                    </div>
+                </div>
+                <div class="box followers">
+                    <div class="info">
+                        <div class="icon following">
+                            <img src="../CSS final project/assets/icons/cards/public.svg" alt="">
+                        </div>
+                        <div class="how-much">
+                            <p>Followers</p>
+                            <h2>+245</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <img src="../CSS final project/assets/icons/cards/update.svg" alt="">
+                        <p>Just Updated</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="listing-title  marginY50">Manage Listing</h1>
+            <div class="listing  marginY50">
+                <div class="list list1">
+                    <img src="../CSS final project/assets/images/card-1.jpeg" alt="" class="listImg">
+                    <h2>Cozy 5 Stars Apartment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Earum sapiente, aliquam nobis eligendi
+                        incidunt obcaecati ex minima veniam velit libero.</p>
+                    <hr>
+                    <div class="list-footer">
+                        <h3>$899/night</h3>
+                        <div class="location">
+                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                            <p>Barcelona, Spain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list list2">
+                    <img src="../CSS final project/assets/images/card-2.jpeg" alt="" class="listImg">
+                    <h2>Office Studio</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Magni voluptas ullam delectus temporibus
+                        labore nihi!</p>
+                    <hr>
+                    <div class="list-footer">
+                        <h3>$1.119/night</h3>
+                        <div class="location">
+                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list list3">
+                    <img src="../CSS final project/assets/images/card-3.jpeg" alt="" class="listImg">
+                    <h2>Beautiful Castle</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Ipsum obcaecati sequi, ducimus
+                        laboriosam nulla hic perspiciatis dolores expedita iure consequuntur.</p>
+                    <hr>
+                    <div class="list-footer">
+                        <h3>$459/night</h3>
+                        <div class="location">
+                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                            <p>Milan, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
     </div>
 </body>
