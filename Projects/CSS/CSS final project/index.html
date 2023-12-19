@@ -74,36 +74,41 @@
 
     <div class="content">
         <header>
-            <div class="dashboard">
-                <div class="more">
-                    <img src="./assets/icons/header/more.svg" alt="" title="See More" cursorPointer>
-                </div>
-                <p>Dashboard</p>
-            </div>
-            <div class="other">
-                <div class="search-bar">
-                    <form class="search-bar">
-                        <input type="text" placeholder="Search" id="search" />
-                        <label class="more" for="search">
-                            <img src="./assets/icons/header/search.svg" alt="" title="Search">
-                        </label>
-                    </form>
-                </div>
-                <img src="./assets/icons/header/headerDashboard.svg" alt="" title="Dashboard">
-                <div class="notifis">
-                    <span class="five">5</span>
-                    <img src="./assets/icons/header/notifications.svg" alt="" class="notifications"
-                        title="Notifications">
-                    <div class="notification-box">
-                        <p>John Doe sent a message</p>
-                        <p>Someone viewed your profile</p>
-                        <p>John Doe sent a message</p>
-                        <p>Someone viewed your profile</p>
-                        <p>Another notification</p>
+            <div class="header header1">
+                <div class="dashboard cursorPointer">
+                    <div class="more">
+                        <img src="./assets/icons/header/more.svg" alt="" title="See More">
                     </div>
+                    <p>Dashboard</p>
                 </div>
-
-                <img src="./assets/icons/header/headerAvatar.svg" alt="" title="Profile">
+                <div class="other">
+                    <div class="search-bar">
+                        <form class="search-bar">
+                            <input type="text" placeholder="Search" id="search" />
+                            <label class="more cursorPointer" for="search">
+                                <img src="./assets/icons/header/search.svg" alt="" title="Search">
+                            </label>
+                        </form>
+                    </div>
+                    <img src="./assets/icons/header/headerDashboard.svg" alt="" title="Dashboard" class="cursorPointer">
+                    <div class="notifis cursorPointer">
+                        <span class="five">5</span>
+                        <img src="./assets/icons/header/notifications.svg" alt="" class="notifications"
+                            title="Notifications">
+                        <div class="notification-box">
+                            <p>John Doe sent a message</p>
+                            <p>Someone viewed your profile</p>
+                            <p>John Doe sent a message</p>
+                            <p>Someone viewed your profile</p>
+                            <p>Another notification</p>
+                        </div>
+                    </div>
+                    <img src="./assets/icons/header/headerAvatar.svg" alt="" title="Profile" class="cursorPointer">
+                </div>
+            </div>
+            <div class="header header2">
+                <p>Dashborad</p>
+                <img src="./assets/icons/header/menu.svg" alt="" class="cursorPointer" title="Menu">
             </div>
         </header>
         <main class="marginY50">
@@ -222,50 +227,104 @@
             <h1 class="listing-title  marginY50">Manage Listing</h1>
             <div class="listing  marginY50">
                 <div class="list list1">
-                    <img src="../CSS final project/assets/images/card-1.jpeg" alt="" class="listImg">
-                    <h2>Cozy 5 Stars Apartment</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Earum sapiente, aliquam nobis eligendi
-                        incidunt obcaecati ex minima veniam velit libero.</p>
-                    <hr>
-                    <div class="list-footer">
-                        <h3>$899/night</h3>
-                        <div class="location">
-                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
-                            <p>Barcelona, Spain</p>
+                    <div class="list-header">
+                        <div>
+                            <img src="../CSS final project/assets/images/card-1.jpeg" alt="" class="listImg">
+                        </div>
+                        <div class="list-buttons">
+                            <img src="./assets/icons/cards/view.svg" alt="" title="View" class="cursorPointer">
+                            <img src="./assets/icons/cards/edit.svg" alt="" title="Edit" class="cursorPointer">
+                            <img src="./assets/icons/cards/delete.svg" alt="" title="Delete" class="cursorPointer">
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-body">
+                            <h2>Cozy 5 Stars Apartment</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Earum sapiente, aliquam nobis
+                                eligendi
+                                incidunt obcaecati ex minima veniam velit libero.</p>
+                        </div>
+                        <hr>
+                        <div class="list-footer">
+                            <h3>$899/night</h3>
+                            <div class="location">
+                                <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                                <p>Barcelona,Spain</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="list list2">
-                    <img src="../CSS final project/assets/images/card-2.jpeg" alt="" class="listImg">
-                    <h2>Office Studio</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Magni voluptas ullam delectus temporibus
-                        labore nihi!</p>
-                    <hr>
-                    <div class="list-footer">
-                        <h3>$1.119/night</h3>
-                        <div class="location">
-                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
-                            <p>London, UK</p>
+                    <div class="list-header">
+                        <div>
+                            <img src="../CSS final project/assets/images/card-2.jpeg" alt="" class="listImg">
+                        </div>
+                        <div class="list-buttons">
+                            <img src="./assets/icons/cards/view.svg" alt="" title="View" class="cursorPointer">
+                            <img src="./assets/icons/cards/edit.svg" alt="" title="Edit" class="cursorPointer">
+                            <img src="./assets/icons/cards/delete.svg" alt="" title="Delete" class="cursorPointer">
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-body">
+                            <h2>Office Studio</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Magni voluptas ullam
+                                delectus
+                                temporibus labore nihi !</p>
+                        </div>
+                        <hr>
+                        <div class="list-footer">
+                            <h3>$1.119/night</h3>
+                            <div class="location">
+                                <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                                <p>London,UK</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="list list3">
-                    <img src="../CSS final project/assets/images/card-3.jpeg" alt="" class="listImg">
-                    <h2>Beautiful Castle</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Ipsum obcaecati sequi, ducimus
-                        laboriosam nulla hic perspiciatis dolores expedita iure consequuntur.</p>
-                    <hr>
-                    <div class="list-footer">
-                        <h3>$459/night</h3>
-                        <div class="location">
-                            <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
-                            <p>Milan, Italy</p>
+                    <div class="list-header">
+                        <div>
+                            <img src="../CSS final project/assets/images/card-3.jpeg" alt="" class="listImg">
+                        </div>
+                        <div class="list-buttons">
+                            <img src="./assets/icons/cards/view.svg" alt="" title="View" class="cursorPointer">
+                            <img src="./assets/icons/cards/edit.svg" alt="" title="Edit" class="cursorPointer">
+                            <img src="./assets/icons/cards/delete.svg" alt="" title="Delete" class="cursorPointer">
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-body">
+                            <h2>Beautiful Castle</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Ipsum obcaecati sequi,
+                                ducimus
+                                laboriosam nulla hic perspiciatis dolores expedita iure consequuntur.</p>
+                        </div>
+                        <hr>
+                        <div class="list-footer">
+                            <h3>$459/night</h3>
+                            <div class="location">
+                                <img src="../CSS final project/assets/icons/cards/location.svg" alt="">
+                                <p>Milan,Italy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <hr>
+        <footer>
+            <div class="footer-information">
+                <h4>HOME</h4>
+                <h4>COMPANY</h4>
+                <h4>PORTFOLIO</h4>
+                <h4>BLOG</h4>
+            </div>
+            <div class="footer-copyright">
+                <p>©John Doe,2023</p>
+            </div>
+        </footer>
     </div>
 </body>
 
