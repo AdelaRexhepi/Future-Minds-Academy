@@ -326,7 +326,7 @@ iframe {
 }
 
 .list-header:hover .listImg {
-    transform: translateY(-70px);
+    transform: translateY(-50px);
 }
 
 .list h2,

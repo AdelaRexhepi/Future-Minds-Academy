@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = Math.floor(Math.random() * 6 + 1);
+        let guess = parseInt(prompt("Pick a number between 1 to 6"));
+        if(guess >= 1 && guess <=6){
+           if(guess == answer){
+            alert('Congratulations')
+        }
+        else{
+            alert(`Incorrect. This was the correct number: ${answer}`);
+        } 
+        }
+        else{
+            alert('Dont pick other numbers, only pick numbers from 1 to 6');
+        }
+    </script>
+</body>
+</html>

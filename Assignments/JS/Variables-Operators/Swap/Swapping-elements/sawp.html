@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstSentence = prompt('Write your first sentence:');
+        let secondSentence = prompt('Write your second sentence:');
+        
+        let temp = firstSentence;
+        firstSentence = secondSentence;
+        secondSentence = temp;
+
+        console.log(firstSentence); //this outputs the second sentence
+        console.log(secondSentence); //this outputs the first sentence
+    </script>
+</body>
+</html>

@@ -7,9 +7,15 @@
 </head>
 <body>
     <script>
-        var euros = parseInt(prompt("Enter the amount in Euros:"));
-        var dollars = euros * 1.11;
-        alert(euros + " Euros is equal to " + dollars + " Dollars");
+        let number = parseInt(prompt("Type a number"));
+        let result;
+
+        if(number%2==0){
+            alert('Even');
+        }
+        else{
+            alert('Odd');
+        }
     </script>
 </body>
 </html>

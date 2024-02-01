@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseFloat(prompt('Type the first number'));
+        let b = parseFloat(prompt('Type the second number'));
+        let c = parseFloat(prompt('Type the third number'));
+        let largestNumber = a;
+
+        if (b > largestNumber) {
+            largestNumber = b;
+        }
+        if (c > largestNumber) {
+            largestNumber = c;
+        }
+        alert(`The largest number is ${largestNumber}`);
+    </script>
+</body>
+
+</html>

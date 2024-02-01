@@ -7,9 +7,14 @@
 </head>
 <body>
     <script>
-        var euros = parseInt(prompt("Enter the amount in Euros:"));
-        var dollars = euros * 1.11;
-        alert(euros + " Euros is equal to " + dollars + " Dollars");
+        let userInput;
+        let sum = 0
+        
+        while(userInput !== 0){
+            userInput = parseInt(prompt('Wrtie a number'));
+            sum += userInput;
+        }
+        alert(`Rezultati eshte ${sum}`)
     </script>
 </body>
 </html>

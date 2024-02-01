@@ -7,9 +7,14 @@
 </head>
 <body>
     <script>
-        var euros = parseInt(prompt("Enter the amount in Euros:"));
-        var dollars = euros * 1.11;
-        alert(euros + " Euros is equal to " + dollars + " Dollars");
+        let year = parseInt(prompt('Viti:'));
+
+        if(year % 4 ==0 && (year % 100 !=0 || year % 400 == 0)){
+            alert('Leap year');
+        }
+        else{
+            alert('Not a leap year')
+        }
     </script>
 </body>
 </html>

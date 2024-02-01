@@ -7,9 +7,9 @@
 </head>
 <body>
     <script>
-        var euros = parseInt(prompt("Enter the amount in Euros:"));
-        var dollars = euros * 1.11;
-        alert(euros + " Euros is equal to " + dollars + " Dollars");
+        let domain = prompt("What website would you like to visit?")
+        let url = `https://www.${domain}.com`
+        location.href = url
     </script>
 </body>
 </html>
