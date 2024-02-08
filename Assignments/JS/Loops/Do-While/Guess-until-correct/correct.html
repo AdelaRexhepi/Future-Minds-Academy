@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let random = Math.floor(Math.random() * 6) + 1;
+        let userInput;
+        let counter = 0;
+        do {
+            userInput = parseInt(prompt('Guess the number between 1 and 6:'))
+            counter++;
+        }
+        while (userInput != random);
+        if (counter == 1) {
+            trying = "try"
+        }
+        else {
+            trying = "tries"
+        }
+        alert(`Congratulations, you guessed the correct number in ${counter} ${trying}`)
+    </script>
+</body>
+
+</html>
