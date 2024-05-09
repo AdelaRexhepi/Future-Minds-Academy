@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myCar = {
+            manufacturer: 'Mercedes Benz',
+            model: 'G Class',
+            engine: {
+                size: 4.0,
+                type: 'V8',
+                hp: 680
+            },
+            color: 'black',
+            fulExtra: true,
+            mileage: 252345,
+            tankStatus: 40,
+            tankCapacity: 100,
+            isFull: function(){
+                return this.tankStatus === this.tankCapacity
+            },
+        printDetails: function(){
+        console.log(`${this.manufacturer}, ${this.model}, ${this.engine.size}, ${this.color}, ${this.fulExtra}, ${this.mileage}, ${this.tankStatus}, ${this.tankCapacity}`)
+        },
+            lowGas: function(){
+                return this.tankStatus < 0.01 * this.tankCapacity;
+            }
+        }
+        console.log(myCar.engine.type)
+        console.log(myCar.isFull())
+        myCar.printDetails()
+        console.log(myCar.lowGas())
+        document.designMode = 'on';
+    </script>
+</body>
+</html>

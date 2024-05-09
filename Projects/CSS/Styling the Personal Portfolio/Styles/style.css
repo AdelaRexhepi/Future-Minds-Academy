@@ -40,6 +40,17 @@ body{
     color: aliceblue;
     font-size: 1.5em;
 }
+.home{
+    border: solid rgb(95, 143, 143) 1px;
+    background-color: rgb(120, 186, 189);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.4em;
+    display: inline-block;
+}
 .about{
     background-color: rgb(120, 186, 189);
     padding-bottom: 1em;

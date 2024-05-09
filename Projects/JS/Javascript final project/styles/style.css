@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 6fr;
+    font-family: 'roboto';
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.marginY50 {
+    margin: 50px 0;
+}
+
+aside {
+    background-image: url(../assets/images/sidebar-1.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    padding: 5px 15px;
+    color: white;
+    font-size: 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.listItems {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 7px 0;
+}
+
+.avatar {
+    width: 45px;
+    border-radius: 50%;
+    height: 45px;
+}
+
+.active {
+    background-color: red;
+}
+
+.listItems:hover:not(.active, .profile, .logo) {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.content {
+    background-color: #f1f1f1;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 0 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2 {
+    display: none;
+}
+
+.dashboard,
+.other {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid gray;
+}
+
+input:focus {
+    border-bottom: 2px solid purple;
+}
+
+.notifications {
+    position: relative;
+    width: 30px;
+    margin: 20px 0;
+}
+
+.five {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 5px;
+    top: 12px;
+    right: -5px;
+    left: auto;
+    z-index: 1;
+}
+
+.notifis {
+    position: relative;
+}
+
+.notification-box {
+    display: none;
+    position: absolute;
+    top: 4%;
+    right: 80%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 1);
+    z-index: 2;
+    width: 300px;
+    cursor: pointer;
+}
+
+.notifis:hover .notification-box {
+    display: block;
+}
+
+.notification-box p:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notification-box p {
+    padding: 10px 20px;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.states {
+    background-color: #fff;
+    padding: 0 40px 30px 40px;
+    border-radius: 5px;
+}
+
+.states img {
+    width: 30px;
+    height: 30px;
+}
+
+.world {
+    background-color: rgb(85, 161, 85);
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: -20px;
+    box-shadow: rgba(0, 0, 0, 1);
+}
+
+.global-title {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.status-tables {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px;
+}
+
+tr {
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.icon {
+    padding: 30px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: -20px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.chair {
+    background-color: rgb(255, 153, 0);
+}
+
+.equalizer {
+    background-color: rgb(255, 80, 109);
+}
+
+.revenuing {
+    background-color: rgb(85, 161, 85);
+}
+
+.following {
+    background-color: rgb(92, 178, 248);
+}
+
+.box {
+    background-color: #fff;
+    padding: 0 40px 20px 40px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 0 5% 5% 0;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bottom p {
+    color: #727272;
+}
+
+.how-much {
+    text-align: end;
+}
+
+.how-much h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.listImg {
+    width: 90%;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+
+}
+
+.list {
+    border: 20px;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.list-card {
+    padding: 0 30px;
+}
+
+.list-header .listImg {
+    transition: transform 0.3s cubic-bezier(.34, .61, .7, 1);
+    cursor: pointer;
+}
+
+.list-header:hover .listImg {
+    transform: translateY(-50px);
+}
+
+.list h2,
+h3 {
+    font-weight: normal;
+}
+
+.list-body p {
+    padding-bottom: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #727272;
+}
+
+.list-buttons {
+    visibility: hidden;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.list-header:hover .list-buttons {
+    visibility: visible;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+hr {
+    color: #727272;
+}
+
+@media (max-width:1300px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .header1 {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+    }
+
+    .status-tables {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .listing{
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (max-width:850px) {
+    .listing{
+        width: 100%;
+    }
+    .boxes{
+        grid-template-columns: 1fr;
+    }
+}

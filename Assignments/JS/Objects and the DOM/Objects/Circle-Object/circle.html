@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let circle = {
+            radius: 2,
+            getDiameter: function () {
+                return this.radius * 2;
+            },
+            getPerimeter: function () {
+                return 2 * Math.PI * this.radius;
+            },
+            getArea: function () {
+                return Math.PI * this.radius ** 2;
+            },
+            grow: function(a){
+                return this.radius += a;
+            },
+            shrink: function(a){
+                this.radius -= a;
+                if(this.radius <=1){
+                    this.radius = 1;
+                }
+            }
+        };
+        console.log(circle.getDiameter());
+    </script>
+</body>
+
+</html>

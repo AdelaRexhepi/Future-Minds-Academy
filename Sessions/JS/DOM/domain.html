@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sec1">
+        <h3>Hello there</h3>
+        <img src="ket.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem magnam incidunt fugit, natus obcaecati
+            iusto. Assumenda repudiandae ullam et dignissimos fugit quidem, pariatur laboriosam, molestias facilis
+            perferendis eveniet at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores possimus accusantium, quos ducimus
+            quasi officia quas dicta enim minus dolorum vitae provident sit praesentium voluptas perspiciatis! Eveniet,
+            ratione voluptas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem magnam incidunt fugit, natus
+            obcaecati iusto. Assumenda repudiandae ullam et dignissimos fugit quidem, pariatur laboriosam, molestias
+            facilis perferendis eveniet at.</p>
+    </div>
+    <a href="javascript: hideMe();">Hide Me</a>
+    <br>
+    <a href="javascript: showMe();">Show Me</a>
+
+    <script>
+        const sec1 = document.querySelector('.sec1');
+
+        function hideMe() {
+            sec1.setAttribute('style' ,'visibility: hidden;')
+        }
+        function showMe() {
+            sec1.setAttribute('style' ,'visibility: visible;')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My movies</title>
+    
+</head>
+<body>
+    <script>
+        let allMovies = [
+            {
+                genre: "Actions",
+                movies: [
+                    {
+                        title: "Spiderman",
+                        thumb: "Spiderman.png",
+                        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        trailer: `<iframe width="560" height="315" src="https://www.youtube.com/embed/t06RUxPbp_c?si=VlS-JR_IMvc45-VJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+                        length: 104
+                    },
+                    {
+                        title: "Johnwick 3",
+                        thumb: "johnwick3.png",
+                        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        trailer: `<iframe width="560" height="315" src="https://www.youtube.com/embed/M7XM597XO94?si=INvGT0J3ndzNbicH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+                        length: 90
+                    }
+                ]
+            }
+        ]
+
+    for(let i; i < allMovies.length; i++){
+        console.log("Genre: " + allMovies[i].genre)
+    }
+    console.log("Genre: " + allMovies[0].genre)
+    console.log("TItle: "+ allMovies[0].movies[0].title)
+    </script>
+</body>
+</html>

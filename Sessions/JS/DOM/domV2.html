@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sec1">
+        <h3>Hello there</h3>
+        <img src="ket.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem magnam incidunt fugit, natus obcaecati
+            iusto. Assumenda repudiandae ullam et dignissimos fugit quidem, pariatur laboriosam, molestias facilis
+            perferendis eveniet at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores possimus accusantium, quos ducimus
+            quasi officia quas dicta enim minus dolorum vitae provident sit praesentium voluptas perspiciatis! Eveniet,
+            ratione voluptas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem magnam incidunt fugit, natus
+            obcaecati iusto. Assumenda repudiandae ullam et dignissimos fugit quidem, pariatur laboriosam, molestias
+            facilis perferendis eveniet at.</p>
+    </div>
+    <a class="hideShow" href="javascript: toggleOnOff();">Hide me</a>
+
+    <script>
+        const sec1 = document.querySelector('.sec1');
+        const hideShow =  document.querySelector('.hideShow');
+        let state = true;
+
+        function  toggleOnOff(){
+            if(state == true){
+                sec1.setAttribute('style' ,'visibility: hidden;')
+                hideShow.innerHTML = "Show me";
+                state = false;
+            }
+            else{
+                sec1.setAttribute('style' ,'visibility: visible;')
+                hideShow.innerHTML = "Hide me"
+                state = true
+            }
+        }
+    </script>
+</body>
+
+</html>
