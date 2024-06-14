@@ -46,7 +46,7 @@ function loadQuestion(index) {
     for (let i = 0; i < allOptions.length; i++) {
         option_list.innerHTML += `<div class="option" onclick="optionSelect(this, ${index}, ${i})">
                                     <span>${allOptions[i]}</span>
-                                </div>`;
+                                  </div>`;
     }
     timerInterval = setInterval(timerCount, 1000);
 }
