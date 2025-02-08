@@ -1,0 +1,8 @@
+.Counter{
+    text-align: center;
+}
+.Counter-Toggle{
+    gap: 1rem;
+    background-color: aliceblue;
+    box-shadow: #c99e9e;
+}
